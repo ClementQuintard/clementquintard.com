@@ -44,7 +44,7 @@ At depth, the usual instinct in an extreme sport, to push against the difficulty
 
 Everything above also applies to marine mammals, with the numbers scaled up. I am an occasional freediver, and Vancouver is a good place for it. You can dive from the cliffs along Howe Sound into water that looks empty from the surface and turns out to be full: thousands of sea stars on the rock, sea urchins, the occasional octopus, and a lot of small, strange life you would not expect to exist. And seals and sea lions, which can scare you. I took the video below near Lions Bay. The sea lion came straight at me and turned away at the last moment, which is apparently a normal way for them to inspect a stranger.
 
-<figure class="video"><video controls muted playsinline loop preload="metadata" src="video/sea-lion-lions-bay.mp4"></video><figcaption>A sea lion checking me out, Lions Bay, British Columbia. No sound.</figcaption></figure>
+<figure class="video"><video controls muted playsinline loop preload="metadata" src="video/sea-lion-lions-bay.mp4"></video><figcaption>A sea lion checking me out, Lions Bay, British Columbia.</figcaption></figure>
 
 These animals routinely dive past 300 meters. Their heart rate, around 100 beats per minute at the surface, can fall below 10 during a dive. It is the same reflex we have, with a much larger range.
 
