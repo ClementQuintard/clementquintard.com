@@ -11,4 +11,4 @@ Static site for clementquintard.com, deployed on Cloudflare (Workers static asse
 - `build.py` — generates `site/` from the above. `pip install markdown`, then `python3 build.py`.
 
 ## Deploy
-Cloudflare builds from this repo: build command `pip install markdown && python3 build.py`, output directory `site`.
+Cloudflare Workers Builds runs `pip install markdown && python3 build.py`, then `npx wrangler deploy` publishes `site/` as static assets (see `wrangler.jsonc`).

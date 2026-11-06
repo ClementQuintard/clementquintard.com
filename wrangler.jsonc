@@ -1,0 +1,5 @@
+{
+  "name": "empty-king-255c",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "./site", "not_found_handling": "404-page", "html_handling": "auto-trailing-slash" }
+}

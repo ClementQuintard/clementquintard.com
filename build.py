@@ -183,4 +183,7 @@ for p in posts:
 </div></main>{FOOT}'''
     body = body.replace('src="img/', 'src="../img/').replace('href="img/', 'href="../img/')
     open(os.path.join(OUT, 'posts', p['slug'] + '.html'), 'w').write(page(body, p['title'] + ' · Clément Quintard', '../', p['excerpt'][:160]))
+nf = f'''{nav('', 'index.html')}
+<main class="article"><div class="wrap"><div class="d">404</div><h1>Nothing <em>here</em></h1><p class="prose">That page does not exist. <a href="index.html">Back to the home page</a>.</p></div></main>{FOOT}'''
+open(os.path.join(OUT, '404.html'), 'w').write(page(nf, 'Not found · Clément Quintard', ''))
 print('built', len(posts), 'posts ->', OUT)
