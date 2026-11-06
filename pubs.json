@@ -1,0 +1,154 @@
+[
+ {
+  "year": 2026,
+  "title": "An immune-coupled human heart-on-chip for dissecting and treating myocardial ischemia-reperfusion injury",
+  "authors": "Quintard C, Wang J, Pelissier A, et al., Penninger JM",
+  "venue": "Nature Biotechnology",
+  "status": "In revision",
+  "lead": true,
+  "type": "Article"
+ },
+ {
+  "year": 2026,
+  "title": "Flow shapes endothelial and mural cell states in human stem cell-derived capillary networks-on-chip",
+  "authors": "Quintard C, Wang J, Pelissier A, et al., Penninger JM",
+  "venue": "Nature Cell Biology",
+  "status": "In revision",
+  "lead": true,
+  "type": "Article"
+ },
+ {
+  "year": 2026,
+  "title": "Modeling human hematopoiesis in bone marrow organoids",
+  "authors": "Quintard C, Salewskij K, Ramisch S, et al., Penninger JM",
+  "venue": "Cell Stem Cell",
+  "status": "In revision",
+  "lead": true,
+  "type": "Article"
+ },
+ {
+  "year": 2026,
+  "title": "Residual scoring of transcription factor activity reveals context-specific regulators",
+  "authors": "Quintard C, et al., Penninger JM, Pelissier A",
+  "venue": "",
+  "status": "In preparation",
+  "lead": true,
+  "type": "Article"
+ },
+ {
+  "year": 2026,
+  "title": "A critical review of body-on-a-chip systems",
+  "authors": "Ren J, Quintard C, Penninger JM",
+  "venue": "Lab on a Chip",
+  "status": "In revision",
+  "lead": false,
+  "type": "Review"
+ },
+ {
+  "year": 2026,
+  "title": "Building physiologically relevant multi-organ-on-chip systems",
+  "authors": "Quintard C, Ren J, Penninger JM",
+  "venue": "Nature Reviews Bioengineering",
+  "doi": "10.1038/s44222-026-00496-6",
+  "lead": true,
+  "type": "Comment"
+ },
+ {
+  "year": 2026,
+  "title": "Organotypic vascularization improves maturation of human stem cell-derived islets and restores normoglycemia in diabetic mice",
+  "authors": "Wang J, Pelissier A, Lin JSH, Quintard C, Tamakhina A, Wang J, Jiao J, et al.",
+  "venue": "Cell Stem Cell",
+  "doi": "10.1016/j.stem.2026.09.011",
+  "lead": false,
+  "type": "Article"
+ },
+ {
+  "year": 2025,
+  "title": "Scalable, vascularized, perfusable organoids-on-chip and methods thereof",
+  "authors": "Quintard C, Penninger JM",
+  "venue": "US provisional patent 63/802,864",
+  "lead": true,
+  "type": "Patent"
+ },
+ {
+  "year": 2025,
+  "title": "Human assembloid of human blood vessel organoids with pancreatic islets improves insulin secretion over time ex vivo",
+  "authors": "Tubbs E, Mehanović M, Lopes M, Quintard C, Combe S, Pirlian C, et al.",
+  "venue": "Cell Reports",
+  "doi": "10.1016/j.celrep.2025.116378",
+  "lead": false,
+  "type": "Article"
+ },
+ {
+  "year": 2025,
+  "title": "Organoid models of lymphoid tissues",
+  "authors": "Bogoslowski A, Ren J, Quintard C, Penninger JM",
+  "venue": "Organoids",
+  "doi": "10.3390/organoids4020007",
+  "lead": false,
+  "type": "Review"
+ },
+ {
+  "year": 2024,
+  "title": "A microfluidic platform integrating functional vascularized organoids-on-chip",
+  "authors": "Quintard C, Tubbs E, Jonsson G, Jiao J, Wang J, Werschler N, Laporte C, et al.",
+  "venue": "Nature Communications",
+  "doi": "10.1038/s41467-024-45710-4",
+  "lead": true,
+  "type": "Article"
+ },
+ {
+  "year": 2024,
+  "title": "Engineering next generation vascularized organoids",
+  "authors": "Werschler N, Quintard C, Nguyen S, Penninger J",
+  "venue": "Atherosclerosis",
+  "doi": "10.1016/j.atherosclerosis.2024.118529",
+  "lead": false,
+  "type": "Review"
+ },
+ {
+  "year": 2022,
+  "title": "Microfluidic device integrating a network of hyper-elastic valves for automated glucose stimulation and insulin secretion collection from a single pancreatic islet",
+  "authors": "Quintard C, Tubbs E, Achard JL, Navarro F, Gidrol X, Fouillet Y",
+  "venue": "Biosensors and Bioelectronics",
+  "doi": "10.1016/j.bios.2022.113967",
+  "lead": true,
+  "type": "Article"
+ },
+ {
+  "year": 2022,
+  "title": "Selective plane illumination microscope dedicated to volumetric imaging in microfluidic chambers",
+  "authors": "Bissardon C, Mermet X, Quintard C, Sanjuan F, Fouillet Y, Bottausci F, et al.",
+  "venue": "Biomedical Optics Express",
+  "doi": "10.1364/boe.455377",
+  "lead": false,
+  "type": "Article"
+ },
+ {
+  "year": 2021,
+  "title": "Method for achieving microfluidic perfusion of a spheroid and device suitable for implementing said method",
+  "authors": "Quintard C, Achard JL, Fouillet Y",
+  "venue": "US Patent 11,542,462 B2",
+  "url": "https://patents.google.com/patent/US11542462B2/en",
+  "lead": true,
+  "type": "Patent"
+ },
+ {
+  "year": 2020,
+  "title": "Optimised hyperbolic microchannels for the mechanical characterisation of bio-particles",
+  "authors": "Liu Y, Zografos K, Fidalgo J, Duchêne C, Quintard C, Darnige T, Filipe V, et al.",
+  "venue": "Soft Matter",
+  "doi": "10.1039/d0sm01293a",
+  "lead": false,
+  "type": "Article"
+ },
+ {
+  "year": 2017,
+  "title": "On the origin of the driving force in the Marangoni propelled gas bubble trapping mechanism",
+  "authors": "Miniewicz A, Quintard C, Orlikowska H, Bartkiewicz S",
+  "venue": "Physical Chemistry Chemical Physics",
+  "doi": "10.1039/c7cp01986f",
+  "lead": false,
+  "type": "Article"
+ }
+]
