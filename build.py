@@ -61,12 +61,30 @@ def read_post(path):
         'title': meta.get('title', ''), 'date': meta.get('date', ''),
         'image': meta.get('image', ''), 'alt': meta.get('alt', ''),
         'excerpt': meta.get('excerpt', ''), 'html': body_html,
+        'lang': meta.get('lang', 'en'), 'translation_of': meta.get('translation_of', ''),
     }
 
-posts = sorted((read_post(p) for p in glob.glob(os.path.join(SRC, 'posts', '*.md'))), key=lambda p: p['date'], reverse=True)
+all_posts = sorted((read_post(p) for p in glob.glob(os.path.join(SRC, 'posts', '*.md'))), key=lambda p: p['date'], reverse=True)
+posts = [p for p in all_posts if not p['translation_of']]          # listed on the home page
+by_slug = {p['slug']: p for p in all_posts}
+translations = {p['translation_of']: p for p in all_posts if p['translation_of']}
 
-def fmt_date(d):
-    return datetime.date.fromisoformat(d).strftime('%B %-d, %Y')
+FLAG_FR = '<svg viewBox="0 0 3 2" width="21" height="14" aria-hidden="true"><rect width="1" height="2" fill="#0055a4"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#ef4135"/></svg>'
+FLAG_EN = '<svg viewBox="0 0 60 40" width="21" height="14" aria-hidden="true"><rect width="60" height="40" fill="#012169"/><path d="M0 0L60 40M60 0L0 40" stroke="#fff" stroke-width="8"/><path d="M0 0L60 40M60 0L0 40" stroke="#c8102e" stroke-width="3"/><path d="M30 0V40M0 20H60" stroke="#fff" stroke-width="12"/><path d="M30 0V40M0 20H60" stroke="#c8102e" stroke-width="7"/></svg>'
+
+def lang_switch(p):
+    # link from an article to its other-language version, shown as a flag
+    other = translations.get(p['slug']) or (by_slug.get(p['translation_of']) if p['translation_of'] else None)
+    if not other: return ''
+    if other['lang'] == 'fr':
+        return f'<a class="lang" href="{other["slug"]}.html" hreflang="fr" lang="fr" title="Lire en français">{FLAG_FR} Lire en français</a>'
+    return f'<a class="lang" href="{other["slug"]}.html" hreflang="en" lang="en" title="Read in English">{FLAG_EN} Read in English</a>'
+
+MOIS = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre']
+def fmt_date(d, lang='en'):
+    dt = datetime.date.fromisoformat(d)
+    if lang == 'fr': return f"{dt.day} {MOIS[dt.month-1]} {dt.year}"
+    return dt.strftime('%B %-d, %Y')
 
 # ---------- home ----------
 def pub_li(p):
@@ -173,18 +191,21 @@ shutil.copy(os.path.join(SRC, 'cv.pdf'), OUT)
 if os.path.isdir(os.path.join(SRC, 'video')): shutil.copytree(os.path.join(SRC, 'video'), os.path.join(OUT, 'video'), dirs_exist_ok=True)
 open(os.path.join(OUT, 'index.html'), 'w').write(page(home_body, 'Clément Quintard', '', 'Clément Quintard, postdoctoral fellow at UBC working on vascularized and immunized organoids-on-chip, and a blog on science and everything else.', skeleton=not ARTIFACT))
 open(os.path.join(OUT, 'research.html'), 'w').write(page(research_body, 'Background · Clément Quintard', ''))
-for p in posts:
+for p in all_posts:
+    back = '← Tous les billets' if p['lang'] == 'fr' else '← All posts'
     body = f'''{nav('../', '../index.html')}
-<main class="article"><div class="wrap">
-<a class="back" href="../index.html#blog">← All posts</a>
-<div class="d">{fmt_date(p['date'])}</div>
+<main class="article" lang="{p['lang']}"><div class="wrap">
+<div class="topbar"><a class="back" href="../index.html#blog">{back}</a>{lang_switch(p)}</div>
+<div class="d">{fmt_date(p['date'], p['lang'])}</div>
 <h1>{html.escape(p['title'])}</h1>
 {f'<img class="hero-img" src="{p["image"]}" alt="{html.escape(p["alt"])}">' if p['image'] else ''}
 <div class="prose">{p['html']}</div>
 </div></main>{FOOT}'''
     body = body.replace('src="img/', 'src="../img/').replace('href="img/', 'href="../img/').replace('src="video/', 'src="../video/')
-    open(os.path.join(OUT, 'posts', p['slug'] + '.html'), 'w').write(page(body, p['title'] + ' · Clément Quintard', '../', p['excerpt'][:160]))
+    out = page(body, p['title'] + ' · Clément Quintard', '../', p['excerpt'][:160])
+    if p['lang'] != 'en': out = out.replace('<html lang="en">', f'<html lang="{p["lang"]}">', 1)
+    open(os.path.join(OUT, 'posts', p['slug'] + '.html'), 'w').write(out)
 nf = f'''{nav('', 'index.html')}
 <main class="article"><div class="wrap"><div class="d">404</div><h1>Nothing <em>here</em></h1><p class="prose">That page does not exist. <a href="index.html">Back to the home page</a>.</p></div></main>{FOOT}'''
 open(os.path.join(OUT, '404.html'), 'w').write(page(nf, 'Not found · Clément Quintard', ''))
-print('built', len(posts), 'posts ->', OUT)
+print('built', len(all_posts), 'pages,', len(posts), 'listed ->', OUT)
