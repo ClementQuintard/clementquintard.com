@@ -170,6 +170,7 @@ shutil.copy(os.path.join(SRC, 'style.css'), OUT)
 shutil.copy(os.path.join(SRC, 'site.js'), OUT)
 shutil.copytree(os.path.join(SRC, 'img'), os.path.join(OUT, 'img'), dirs_exist_ok=True)
 shutil.copy(os.path.join(SRC, 'cv.pdf'), OUT)
+if os.path.isdir(os.path.join(SRC, 'video')): shutil.copytree(os.path.join(SRC, 'video'), os.path.join(OUT, 'video'), dirs_exist_ok=True)
 open(os.path.join(OUT, 'index.html'), 'w').write(page(home_body, 'Clément Quintard', '', 'Clément Quintard, postdoctoral fellow at UBC working on vascularized and immunized organoids-on-chip, and a blog on science and everything else.', skeleton=not ARTIFACT))
 open(os.path.join(OUT, 'research.html'), 'w').write(page(research_body, 'Background · Clément Quintard', ''))
 for p in posts:
@@ -181,7 +182,7 @@ for p in posts:
 {f'<img class="hero-img" src="{p["image"]}" alt="{html.escape(p["alt"])}">' if p['image'] else ''}
 <div class="prose">{p['html']}</div>
 </div></main>{FOOT}'''
-    body = body.replace('src="img/', 'src="../img/').replace('href="img/', 'href="../img/')
+    body = body.replace('src="img/', 'src="../img/').replace('href="img/', 'href="../img/').replace('src="video/', 'src="../video/')
     open(os.path.join(OUT, 'posts', p['slug'] + '.html'), 'w').write(page(body, p['title'] + ' · Clément Quintard', '../', p['excerpt'][:160]))
 nf = f'''{nav('', 'index.html')}
 <main class="article"><div class="wrap"><div class="d">404</div><h1>Nothing <em>here</em></h1><p class="prose">That page does not exist. <a href="index.html">Back to the home page</a>.</p></div></main>{FOOT}'''

@@ -173,3 +173,6 @@ footer .wrap { padding-block: 28px 40px; display: flex; flex-wrap: wrap; justify
 .prose p.notes { color: var(--fg-2); font-size: 14px; line-height: 1.6; }
 .prose sup a { border: 0; color: var(--accent); font-size: 0.75em; }
 .prose hr { border: 0; border-top: 1px solid var(--line); margin: 2.5em 0; }
+
+.prose figure.video { margin: 2em 0; }
+.prose figure.video video { width: 100%; max-width: 100%; display: block; border: 1px solid var(--line); background: #000; }
