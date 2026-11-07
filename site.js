@@ -10,6 +10,28 @@
     document.querySelectorAll('.rv').forEach(function (el) { io.observe(el); });
   }
 
+  // Back to top: appears after one screen of scrolling
+  var top = document.getElementById('totop');
+  if (top) {
+    var tick = false;
+    function onScroll() {
+      if (tick) return; tick = true;
+      requestAnimationFrame(function () {
+        var show = window.scrollY > window.innerHeight * 0.8;
+        if (show) { top.hidden = false; requestAnimationFrame(function () { top.classList.add('show'); }); }
+        else { top.classList.remove('show'); setTimeout(function () { if (!top.classList.contains('show')) top.hidden = true; }, 250); }
+        tick = false;
+      });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    top.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+      if (history.replaceState) history.replaceState(null, '', location.pathname);
+    });
+  }
+
   // Hero: a perfused vascular network. Branching tree grown once, then particles (medium) flow through it.
   var cv = document.getElementById('vasc');
   if (!cv) return;

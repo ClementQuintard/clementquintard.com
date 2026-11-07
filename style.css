@@ -180,3 +180,12 @@ footer .wrap { padding-block: 28px 40px; display: flex; flex-wrap: wrap; justify
 
 .prose figure.video { margin: 2em 0; }
 .prose figure.video video { width: 100%; max-width: 100%; display: block; border: 1px solid var(--line); background: #000; }
+
+/* Back to top */
+.totop { position: fixed; right: max(18px, env(safe-area-inset-right, 0px)); bottom: max(18px, env(safe-area-inset-bottom, 0px)); z-index: 8;
+  width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  background: var(--bg-2); color: var(--fg); border: 1px solid var(--line); box-shadow: 0 4px 18px rgba(0,0,0,.25);
+  opacity: 0; transform: translateY(8px); transition: opacity .25s ease, transform .25s ease; }
+.totop.show { opacity: 1; transform: none; }
+.totop:hover { border-color: var(--accent); color: var(--accent-2); }
+@media (prefers-reduced-motion: reduce) { .totop { transition: none; } }

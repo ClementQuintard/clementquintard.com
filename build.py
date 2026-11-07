@@ -31,7 +31,8 @@ def nav(rel, home):
 <li><a href="{h}#contact">Contact</a></li>
 </ul></nav></div></header>'''
 
-FOOT = '<footer><div class="wrap"><span>© Clément Quintard {y}</span><span>Vancouver, BC</span></div></footer>'.format(y=datetime.date.today().year)
+TOTOP = '<a href="#" class="totop" id="totop" aria-label="Back to top" hidden><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 5l-7 7h4v7h6v-7h4z" fill="currentColor"/></svg></a>'
+FOOT = TOTOP + '<footer><div class="wrap"><span>© Clément Quintard {y}</span><span>Vancouver, BC</span></div></footer>'.format(y=datetime.date.today().year)
 
 MATHJAX = '<script>window.MathJax={tex:{inlineMath:[["\\\\(","\\\\)"]],displayMath:[["$$","$$"]]}};</script><script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>'
 
