@@ -40,7 +40,7 @@ La chute libre est la partie de la plongée que la plupart des apnéistes décri
 
 ## Pourquoi le relâchement est une question de sécurité
 
-En profondeur, l'instinct habituel d'un sport extrême, pousser contre la difficulté, est le mauvais. Une tension musculaire du thorax augmente le gradient de pression à travers les capillaires pulmonaires et peut faire passer du plasma dans les alvéoles. Le résultat est un œdème pulmonaire d'immersion, qui se manifeste par une toux et des crachats teintés de sang après la plongée, et qui compte parmi les blessures reconnues de l'apnée profonde. L'entraînement à la profondeur consiste donc en grande partie à apprendre à rester relâché pendant que le thorax est comprimé, et les plongeurs apprennent vite que tension mentale et tension musculaire sont difficiles à séparer.
+En profondeur, l'instinct habituel d'un sport extrême, de pousser contre la difficulté, est le mauvais. Une tension musculaire du thorax augmente le gradient de pression à travers les capillaires pulmonaires et peut faire passer du plasma dans les alvéoles. Le résultat est un œdème pulmonaire d'immersion, qui se manifeste par une toux et des crachats teintés de sang après la plongée, et qui compte parmi les blessures reconnues de l'apnée profonde. L'entraînement à la profondeur consiste donc en grande partie à apprendre à rester relâché pendant que le thorax est comprimé, et les plongeurs apprennent vite que tension mentale et tension musculaire sont difficiles à séparer.
 
 ## Ce que les mammifères marins font différemment
 
