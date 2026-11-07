@@ -34,7 +34,7 @@ Jacques Mayol et Enzo Maiorca, suivant l'adage « ils ne savaient pas que c'éta
 
 ## La flottabilité neutre et la chute libre
 
-En surface, une inspiration complète rend le plongeur positivement flottant. À mesure que l'air se comprime, les poumons déplacent moins d'eau et la force ascendante diminue. À une certaine profondeur, en général entre 15 et 30 mètres selon la morphologie du plongeur, la combinaison et la quantité de plomb à la ceinture, le plongeur atteint la flottabilité neutre, puis devient négatif en dessous. À partir de là, il cesse de palmer et tombe.
+Une inspiration complète avant de plonger fait que le plongeur flotte à faible profondeur (c'est la poussée d'Archimède qui vous ramène à la surface, ou, en termes plus savants, le fameux énoncé que chaque lycéen a appris par cœur : « Tout corps plongé dans un liquide subit une force verticale, dirigée vers le haut, dont l'intensité est égale au poids du volume de liquide déplacé »). À mesure que l'air se comprime, les poumons déplacent moins d'eau et la force ascendante diminue. À une certaine profondeur, en général entre 15 et 30 mètres selon la morphologie du plongeur, la combinaison et la quantité de plomb à la ceinture, le plongeur atteint la flottabilité neutre, puis devient négatif en dessous. À partir de là, il cesse de palmer et tombe.
 
 La chute libre est la partie de la plongée que la plupart des apnéistes décrivent quand on leur demande pourquoi ils pratiquent. C'est aussi la plus efficace. Les muscles sont au repos, la consommation d'oxygène est à son minimum, et il ne reste à gérer que l'équilibrage et le mental.
 
