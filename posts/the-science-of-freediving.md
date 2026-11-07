@@ -28,7 +28,7 @@ As the diver descends, the air-filled spaces of the body feel the pressure first
 
 That arithmetic produced a prediction that held for decades. The lungs have a residual volume, the amount of air left after a full exhalation, below which the airways and alveoli should start to collapse. For a typical adult, the air in a full breath is compressed to the residual volume somewhere between 30 and 40 meters. In the 1960s, physiologists expected that going deeper would crush the chest.
 
-Jacques Mayol and Enzo Maiorca went deeper anyway, and the body turned out to have a way around the problem. As the lungs compress, the blood that peripheral vasoconstriction has already displaced from the limbs moves into the vessels of the chest and the pulmonary capillaries. Blood is incompressible, so it fills the volume the air has given up and keeps the chest wall and the lungs from collapsing. This is the blood shift. It is the reason the 40-meter limit was wrong, and it is one of the few cases where a sport overturned a textbook prediction in physiology.
+Jacques Mayol and Enzo Maiorca, following the adage "they did not know it was impossible, so they did it", went deeper anyway, and the body turned out to have a way around the problem. As the lungs compress, the blood that peripheral vasoconstriction has already displaced from the limbs moves into the vessels of the chest and the pulmonary capillaries. Blood is incompressible, so it fills the volume the air has given up and keeps the chest wall and the lungs from collapsing. This is the blood shift. It is the reason the 40-meter limit was wrong, and it is one of the few cases where a sport overturned a textbook prediction in physiology.
 
 ## Neutral buoyancy and the free fall
 
