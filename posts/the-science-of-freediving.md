@@ -32,7 +32,7 @@ Jacques Mayol and Enzo Maiorca, following the adage "they did not know it was im
 
 ## Neutral buoyancy and the free fall
 
-A full breath before the dive keeps the diver afloat at shallow depth (it is Archimedes' principle that brings you back to the surface, or, in the more learned form every high-school student once learned by heart: "*Any body immersed in a fluid is subjected to a vertical upward force equal in magnitude to the weight of the fluid displaced*"). As the air compresses, the lungs displace less water and the upward force shrinks. At some depth, usually between 15 and 30 meters depending on the diver's build, the wetsuit and the amount of lead on the belt, the diver becomes neutrally buoyant, and below that point negatively buoyant. From there the diver stops kicking and falls.
+A full breath before the dive keeps the diver afloat at shallow depth (it is Archimedes' principle that brings you back to the surface, or, in the more learned form every high-school student once learned by heart: "*Any body immersed in a fluid is subjected to a vertical upward force equal in magnitude to the weight of the fluid displaced*"). As the air compresses, the lungs displace less water and the upward force shrinks. At some depth, around 10 meters, give or take a few depending on the diver's build, the wetsuit and the amount of lead on the belt, the diver becomes neutrally buoyant, and below that point negatively buoyant. From there the diver stops kicking and falls.
 
 The free fall is the part of the dive most freedivers describe when asked why they do it. It is also the most efficient part. The muscles are at rest, so oxygen consumption is at its lowest, and the only thing left to manage is equalization and the mind.
 
